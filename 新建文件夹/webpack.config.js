@@ -40,15 +40,7 @@ module.exports ={
 					}
 				}
 			},{
-				test: /\.(woff|svg|ttf|eot)$/i,
-				loader:'url-loader',
-				options:{
-					/*图片名称*/
-					name:"fonts/[name].[ext]",
-					/*位置*/
-				}
-			},{
-				test: /\.(gif|png|jpe?g|svg|ttf|eot)$/i,
+				test: /\.(gif|png|jpe?g|svg)$/i,
 				loader:'file-loader',
 				options:{
 					/*图片名称*/
@@ -64,7 +56,7 @@ module.exports ={
 					loader: "style-loader" // creates style nodes from JS strings 
 				}, {
 					loader: "css-loader" // translates CSS into CommonJS 
-				},{
+				}, {
 					loader: "less-loader" // compiles Less to CSS 
 				}]
 			}
