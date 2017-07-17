@@ -7,6 +7,7 @@ webpack-reack实现画廊应用
 * webpack所需loader：     
     * css-loader  
     * file-loader  
+    * url-loader(处理iconfont)  
     * json-loader  
     * less  
     * less-loader  
@@ -62,6 +63,14 @@ module.exports ={
 							browsers: ['last 5  versions']
 						})]
 					}
+				}
+			},{
+				test: /\.(woff|svg|ttf|eot)$/i,
+				loader:'url-loader',
+				options:{
+					/*图片名称*/
+					name:"fonts/[name].[ext]",
+					/*位置*/
 				}
 			},{
 				test: /\.(gif|png|jpe?g|svg)$/i,
