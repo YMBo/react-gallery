@@ -7,7 +7,7 @@ webpack-reack实现画廊应用
 * webpack所需loader：     
     * css-loader  
     * file-loader  
-    * url-loader(处理iconfont)  
+    * url-loader(处理iconfont)  
     * json-loader  
     * less  
     * less-loader  
