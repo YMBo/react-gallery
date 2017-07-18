@@ -1,6 +1,6 @@
 # react-gallery
 webpack-reack实现画廊应用  
-[预览]("https://ymbo.github.io/react-gallery/")  
+[预览](https://ymbo.github.io/react-gallery/)  
 > webpack版本：3.0.0  
 
 ### 开发环境是react+webpack   
