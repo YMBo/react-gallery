@@ -98,4 +98,27 @@ module.exports ={
 	}
 }
 </script>
-```
+```  
+  
+*****  
+### git相关操作  
+将本地代码提交到github 
+
+git add -A   //将文件的修改，文件的删除，文件的新建，添加到暂存区
+
+/*
+git add -u：将文件的修改、文件的删除，添加到暂存区。  
+git add .：将文件的修改，文件的新建，添加到暂存区。  
+git add -A：将文件的修改，文件的删除，文件的新建，添加到暂存区。  
+*/  
+
+2.git commit -m "finish gallery-by-react project"	//添加summary  
+
+3.git push   //提交  
+
+
+
+/*新建一个gh-pages分支*/  
+1.git add dist			//将dist文件夹添加到暂存区  
+2.git commit -m "add dist"	//添加summary  
+3.git subtree push --prefix=dist origin gh-pages	//将dist文件提交到gh-pages分支上  
