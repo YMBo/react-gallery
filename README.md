@@ -126,11 +126,11 @@ git add -A：将文件的修改，文件的删除，文件的新建，添加到�
 3.git subtree push --prefix=dist origin gh-pages	//将dist文件提交到gh-pages分支上		
 		
 		
-/*git基本命令*/		
-1.`git remote`    	
-  列出所有远程主机    	
+/*git基本命令*/    
+1.`git remote`    
+  列出所有远程主机    
 2.`git remote -v`    
   查看远程主机的网址    
 3.`git fetch`    
-  远程主机版本有了更新，需要将这些更新取回本地		
+  远程主机版本有了更新，需要将这些更新取回本地    
 
