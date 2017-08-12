@@ -129,8 +129,33 @@ git add -A：将文件的修改，文件的删除，文件的新建，添加到�
 /*git基本命令*/    
 1.`git remote`    
   列出所有远程主机    
+      
 2.`git remote -v`    
   查看远程主机的网址    
+      
 3.`git fetch`    
   远程主机版本有了更新，需要将这些更新取回本地    
+  比如取回origin主机的master分支    
+  `git fetch origin master`    
+      
+4.`git branch -r`    
+  查看远程分支    
+  
+  `git branch -a`    
+  查看所有分支    
+      
+5.`git checkout -b newBranch origin/master`    
+  在origin/master基础上，创建一个新分支    
+      
+6.`git merge origin/master`或者`git rebase origin/master`    
+  在当前分支上，合并origin/master    
+      
+7.`git pull`
+  取回远程主机某个分支的更新，再与本地制定分支合并。
+  `git pull origin next:master`    
+  取回origin主机的next分支，与本地master分支合并    
+  远程分支与当前分支合并    
+  `git pull origin next`
+      
+ 
 
