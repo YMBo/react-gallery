@@ -137,7 +137,7 @@ git add -A：将文件的修改，文件的删除，文件的新建，添加到�
   远程主机版本有了更新，需要将这些更新取回本地    
   比如取回origin主机的master分支    
   `git fetch origin master`    
-      
+       
 4.`git branch -r`    
   查看远程分支    
   
