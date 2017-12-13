@@ -121,9 +121,13 @@ git add -A：将文件的修改，文件的删除，文件的新建，添加到�
 
 
 /*新建一个gh-pages分支*/  
-1.git add dist			//将dist文件夹添加到暂存区  
-2.git commit -m "add dist"	//添加summary  
-3.git subtree push --prefix=dist origin gh-pages	//将dist文件提交到gh-pages分支上		
+1.git branch testing    
+/*同步到线上*/    
+/*这样就可以自动在远程创建一个 branch_name 分支，然后本地分支会 track 该分支。后面再对该分支使用 push 和 pull 就自动同步。*/    
+git push --set-upstream origin branch_name    
+git add dist			//将dist文件夹添加到暂存区   
+git commit -m "add dist"	//添加summary  
+.git subtree push --prefix=dist origin gh-pages	//将dist文件提交到gh-pages分支上		
 		
 		
 /*git基本命令*/    
