@@ -161,5 +161,18 @@ git commit -m "add dist"	//添加summary
   远程分支与当前分支合并    
   `git pull origin next`
       
- 
+ 8.`分支关联`    
+ github上已经有master分支 和dev分支
+
+`在本地`    
+
+git checkout -b dev 新建并切换到本地dev分支    
+
+git pull origin dev 本地分支与远程分支相关联    
+
+`在本地新建分支并推送到远程`    
+
+git checkout -b test    
+
+git push origin test   这样远程仓库中也就创建了一个test分支    
 
